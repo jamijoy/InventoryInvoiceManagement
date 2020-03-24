@@ -1,0 +1,129 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+
+}
+
+.wizsteps {
+  border: 3px solid #15469B;
+  border-radius: 25px;
+  margin: -15px 10%;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+  background-color: #EFEFF6;
+}
+
+.wizsteps h1 {
+  color: white;
+  background-color: #15469B;
+  font-size:28px;
+  padding: 8px;
+  border-radius: 35px;
+  margin-bottom: 10px;
+}
+
+.invplan h2 {
+  font-size: 26px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.wizsteps .plan-container, .wizsteps .loc-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.wizsteps .plan-container .invplan, .wizsteps .plan-container .invlocation, .wizsteps .loc-container .invplan, .wizsteps .loc-container .invlocation {
+  display: inline-block;
+  border: 3px solid #15469B;
+  border-radius: 20px;
+  margin: 0 5px;
+  padding: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  cursor: pointer;
+  background-color: #fff;
+
+  /* box shadow style code */
+  box-shadow: 
+       inset 0 -3em 3em rgba(0,0,0,0.1), 
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+
+}
+
+.wizsteps .plan-container .invplan:hover, .wizsteps .plan-container .invlocation:hover, .wizsteps .loc-container .invplan:hover, .wizsteps .loc-container .invlocation:hover {
+  background-color: #44ADEE;
+  color: white;
+}
+
+.wizsteps .plan-container .invplan .invplanprice, .wizsteps .plan-container .invlocation .invplanprice, .wizsteps .loc-container .invplan .invplanprice, .wizsteps .loc-container .invlocation .invplanprice {
+  background-color: #15469B;
+  color: white;
+  font-size: 1.2em;
+  padding: 5px;
+  border-radius: 35px;
+}
+
+.wizsteps input[type=number] {
+  font-size: 2em;
+  border: none;
+  text-align: center;
+  border-bottom: 3px solid #15469B;
+}
+
+/* .wizsteps input[type=button] {
+  font-size: 1.5em;
+  background-color: #44ADEE;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+} */
+
+ .wizsteps input[type=button] {
+  border-radius: 5px;
+  background-color: #44ADEE;
+  border: none;
+  color: #FFFFFF;
+
+  font-size: 1.5em;
+  padding: 10px;
+  
+  transition: all 0.5s;
+  cursor: pointer;
+
+}
+
+ .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/*# sourceMappingURL=invland.css.map */
