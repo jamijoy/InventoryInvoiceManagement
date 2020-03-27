@@ -53,15 +53,15 @@
        <div class="banner-content">
 	   
 		  <h1>Blu Fashion</h1>
-		  <form method="post" class="form-signin">
+		  <form action="user_check.php" method="post" class="form-signin">
 		   <h3 class="form-signin-heading">Please sign in</h3>
 		   <div class="form-group">
-		    <input name="phone" type="text" class="form-control" placeholder="Phone">
+		    <input name="phone" type="text" class="form-control" placeholder="Phone" required>
 		   </div>
 		   <div class="form-group">
-		    <input type="password" class="form-control" name="password" placeholder="Password">
+		    <input type="password" class="form-control" name="password" placeholder="Password" required>
 		   </div>
-		   <button class="kafe-btn kafe-btn-mint btn-block" onclick="location.replace('bf_home.html')" type="button" name="subm">Sign in</button>
+		   <button class="kafe-btn kafe-btn-mint btn-block" type="submit" name="subm">Sign in</button>
 		   <br/>
 		   <a class="btn btn-dark " href="bf_register.html" role="button">Don't have an account yet? Register Here.</a>
 		  </form>

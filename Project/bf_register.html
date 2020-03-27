@@ -52,21 +52,24 @@
        <div class="banner-content">
 	   
 		  <h1>Blu Fashion</h1>
-		  <form method="post" class="form-signin">
+		  <form action="reg_check.php" method="post" class="form-signin">
 		   <h3 class="form-signin-heading">Registration Page</h3>
 		   <div class="form-group">
-		    <input name="phone" type="text" class="form-control" placeholder="Enter Phone Number">
+		    <input name="phone" type="text" class="form-control" placeholder="Enter Phone Number" required>
 		   </div>
 		   <div class="form-group">
-		    <input name="username" type="text" class="form-control" placeholder="Enter Username">
+		    <input name="username" type="text" class="form-control" placeholder="Enter Username" required>
 		   </div>
 		   <div class="form-group">
-		    <input type="password" class="form-control" name="password" placeholder="New Password">
+		    <input name="company" type="text" class="form-control" placeholder="Enter Company Name">
 		   </div>
 		   <div class="form-group">
-		    <input type="password" class="form-control" name="conFpassword" placeholder="Confirm Password">
+		    <input name="address" type="text" class="form-control" placeholder="Enter Address">
 		   </div>
-		   <button class="kafe-btn kafe-btn-mint btn-block" onclick="window.location.replace('index.html')" id="sub" type="submit" name="subm">Sign Up</button>
+		   <div class="form-group">
+		    <input type="password" class="form-control" name="password" placeholder="New Password" required>
+		   </div>
+		   <button class="kafe-btn kafe-btn-mint btn-block" id="sub" type="submit" name="subm">Register</button>
 		   <br/>
 		   <a class="btn btn-dark " href="index.html" role="button">Already have an account? Click Here.</a>
 		  </form>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 15, 2020 at 06:42 PM
+-- Generation Time: Mar 27, 2020 at 01:31 PM
 -- Server version: 10.1.28-MariaDB
 -- PHP Version: 7.1.11
 
@@ -68,11 +68,21 @@ CREATE TABLE `users` (
   `username` varchar(15) NOT NULL,
   `password` varchar(15) NOT NULL,
   `type` varchar(15) NOT NULL,
-  `name` varchar(30) NOT NULL,
   `company` varchar(30) NOT NULL,
   `address` varchar(50) NOT NULL,
   `contact` int(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`userid`, `username`, `password`, `type`, `company`, `address`, `contact`) VALUES
+(1, 'Palash Mitra', 'palash', 'admin', 'Blu Fashion Ltd.', 'Mohakhali, Dhaka - 1220.', 1726200207),
+(2, 'Test', 'asd', 'user', 'N/A', 'N/A', 1700598073),
+(3, 'acm', 'asd', 'user', 'teset', 'Bashundhara R/A', 1726200254),
+(4, 'jamijoy.science', 'asd', 'user', 'teset', '', 1726900207),
+(5, 'user', 'asd', 'user', 'teset', 'N/A', 1726245207);
 
 --
 -- Indexes for dumped tables
@@ -104,7 +114,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `userid` int(15) NOT NULL AUTO_INCREMENT;
+  MODIFY `userid` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
